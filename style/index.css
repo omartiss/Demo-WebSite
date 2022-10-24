@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.box__header{
+    
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav{
+    padding: 0 40px;
+    text-align: center;
+}
+
+.nav h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.nav .text2{
+    color: #fff;
+    transition: all 300ms;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -20px  #000;
+}
+
+.nav .text2:hover{
+    color: #000;
+}
+
+section .box__info{
+    width: 100%;
+    padding-top: 60px;
+    padding: 20px 40px;
+    max-width: 1400px;
+    display: flex;
+    background-color:  rgba(240, 235, 235, 0.521);
+}
+
+section .box__info .text{
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .box__info .text h1{
+    color: rgb(153, 129, 175);
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+
+section .box__info .text h2{
+    font-size: 35px;
+    padding: 10px 20px;
+    color: rgb(255, 0, 0);
+}
+
+section .box__info .text p{
+    padding: 20px 40px;
+    padding-right: 80px;
+    font-size: 20px;
+
+}
+
+section .box__info .img img{
+    width: 400px;
+    border-radius: 20px;
+    background: linear-gradient( #fff, #fff);
+    color: black;
+    background-clip: text;
+    animation: text 2s linear infinite;
+}
+
+@keyframes text {
+    0%{
+        filter: hue-rotate(0deg);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+section .box_skills{
+    padding: 0px 40px;
+    padding-top: 60px;
+    max-width: 1400px;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(240, 235, 235, 0.521);
+}
+
+section .box_skills h1{
+    font-size: 40px;
+    color: rgb(153, 129, 175);
+}
+
+section .box_skills p{
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+section .box_hab{
+    max-width: 1400px;
+    padding: 0px 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(240, 235, 235, 0.521);
+}
+
+section .box_hab .skills__text{
+    padding: 0 60px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+section .box_hab .skills__text h3{
+    font-size: 25px;
+    color: rgb(153, 129, 175);
+}
+
+section .box_hab .skills__text p{
+    font-size: 19px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+section .box_hab .img7{
+    display: flex;
+    border-radius: 20px;
+}
+
+section .box_hab .img7 img{
+    width: 400px;
+    border-radius: 40px;
+    background: linear-gradient( #fff, #fff);
+    color: black;
+    background-clip: text;
+    animation: text 7s linear infinite;
+    box-shadow: 1px 1px 30px -12px  #000;
+}
+
+@keyframes text {
+    0%{
+        filter: hue-rotate(0deg);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+section .box_exp{
+    max-width: 1400px;
+    padding: 0px 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section .box_exp .text__exp{
+    width: 100%;
+    text-align: center;
+}
+
+section .box_exp .text__exp h1{
+    font-size: 35px;
+    color: rgb(153, 129, 175);
+}
+
+section .box_exp .text__exp p{
+    padding-top: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+section .box_exp .text__exp a input{
+    padding: 15px 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(153, 129, 175), rgba(240, 235, 235, 0.521));
+    box-shadow: 1px 1px 30px -20px  #000;
+    margin-bottom: 600px;
+}
+
+footer{
+    display: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 235, 235, 0.521);
+}
+
+footer .info{
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer .info h2{
+    color: rgb(153, 129, 175);
+}
+
+footer .img__footer img{
+    width: 30px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    section .box__info .img img{
+        display: none;
+    }
+
+    section .box_hab .img7 img{
+        display: none;
+    }
+
+    .nav .text2{
+        display: none;
+    }
+
+    footer .img__footer img{
+        display: none;
+    }
+}
